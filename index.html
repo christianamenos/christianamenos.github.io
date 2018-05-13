@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html data-ng-app="chWebsite">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport">
+        <link type="image/x-icon" href="../img/favicon.ico" rel="shortcut icon">
+        <title class="ng-binding" data-ng-bind-template="{{title}}">Christian Amenós</title>
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-33519418-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <div class="opacity-layer hidden"></div>
+        <div id="main-nav">
+            <div id="header-bar">
+                <div id="menu-opener" class="cursor-pointer">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div id="breadcrumb">Christian Amenós <span class="separator">-</span> <small>Sobre mi</small></div>
+            </div>
+            <nav>
+                <div class="avatar">
+                    <img src="img/chris_avatar.jpeg" title="Christian Amenós profile">
+                </div>
+                <div id="menu-name">Christian Amenós Jaén</div>
+                <ul>
+                    <li>
+                        <a href="" class="active"><i class="zmdi zmdi-home"></i> Sobre mi</a>
+                        <ul>
+                            <li><a href="#who-am-i"><i class="zmdi zmdi-face"></i> Quién soy</a></li>
+                            <li><a href="#skills"><i class="zmdi zmdi-tune"></i> Habilidades</a></li>
+                            <li><a href="#experience"><i class="zmdi zmdi-case"></i> Experiencia</a></li>
+                            <li><a href="#education"><i class="zmdi zmdi-graduation-cap"></i> Formación</a></li>
+                            <li><a href="#curiosities"><i class="zmdi zmdi-mood"></i> Curiosidades</a></li>
+                        </ul>
+                    </li>
+                    <!--li><a href=""><i class="zmdi zmdi-trending-up"></i> Trayectoria profesional</a></li>
+                    <li><a href=""><i class="zmdi zmdi-roller"></i> Proyectos</a></li>
+                    <li><a href=""><i class="zmdi zmdi-memory"></i> Laboratorio</a></li>
+                    <li><a href=""><i class="zmdi zmdi-file-text"></i> Blog</a></li>
+                    <li><a href=""><i class="zmdi zmdi-email"></i> Contacto</a></li-->
+                </ul>
+                <div class="txt-center social">
+                    <a href="https://github.com/AmenoPh1x" title="Mira mis proyectos en GitHub" class="circle bg-github" target="_blank" rel="nofollow"><i class="zmdi zmdi-github-alt"></i></a>
+                    <a href="https://twitter.com/christianamenos" title="Sígueme en Twitter" class="circle bg-twitter" target="_blank" rel="nofollow"><i class="zmdi zmdi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/christian-amen%C3%B3s-ja%C3%A9n-0659a047" title="Añademe a tu círculo de contactos en LinkeId" class="circle bg-linkedin" target="_blank" rel="nofollow"><i class="zmdi zmdi-linkedin"></i></a>
+                    <a href="https://plus.google.com/+ChristianAmenosJa%C3%A9n" class="circle bg-google" title="Añádeme a tus círculos en Google" target="_blank" rel="nofollow"><i class="zmdi zmdi-google"></i></a>
+                    <a href="https://www.facebook.com/chajaen" class="circle bg-facebook" title="Seamos amigos en Facebook" target="_blank" rel="nofollow"><i class="zmdi zmdi-facebook"></i></a>
+                </div>
+            </nav>
+        </div>
+        <div class="horizontal-colors"></div>
+        <header>
+            <div class="wrapper">
+                <h1 class="txt-center fadeInUp">Christian Amenós <small>Emprendedor / Full-Stack Developer</small></h1>
+                <div id="know-more" class="txt-center toggleOpacity">
+                    <small>Saber más</small>
+                    <i class="zmdi zmdi-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+        <div class="pushdown"></div>
+        <div id="content">
+            <article>
+                <header>
+                    <h2 id="who-am-i"><i class="zmdi zmdi-face big"></i> Quién soy</h2>
+                </header>
+                <div>
+                    <div class="profile-box revealOnScroll" data-animation="fadeIn">
+                        <div class="avatar">
+                            <img class="rounded" src="img/chris_avatar.jpeg" title="Christian Amenós imagen de perfil" alt="Christian Amenós imagen de perfil"/>
+                        </div>
+                        <div>
+
+                            <dl>
+                                <dt>Nombre:</dt>
+                                <dd>Christian Amenós Jaén</dd>
+                                <dt>Fecha de nacimiento:</dt>
+                                <dd>12 de Diciembre de 1987</dd>
+                                <dt>Correo electrónico:</dt>
+                                <dd>christian.amenos@gmail.com</dd>
+                                <dt>Teléfono:</dt>
+                                <dd>+(34) 670 89 48 39</dd>
+                                <dt class="last">Idiomas:</dt>
+                                <dd class="last">Español, Catalán, Inglés</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <h3>Christian Amenós Jaén<small>Emprendedor / Full-Stack Developer</small></h3>
+                    <p>Me llamo Christian Amenós, soy Ingeniero informático de la Universitat Politècnica de Catalunya. Tengo 28 años, soy emprendedor y Full-Stack Developer en Barcelona.</p>
+                    <p>Estoy especializado en el desarrollo de aplicaciones web, aunque también me gusta tantear otros campos como el desarrollo de aplicaciones móviles, videojuegos o IoT entre otros.</p>
+                    <!--div class=" revealOnScroll" data-animation="fadeIn">SOME CONTENT</div-->
+                    <p>Me encanta aprender, por eso me gusta trabajar en mis propios proyectos siempre que tengo ocasión.</p>
+                    <p>En mi tiempo libre me gusta disfrutar del deporte, la familia, la compañía de los amigos o simplemente relajarme con un buen libro, película o videojuego, siempre acompañado de la mejor medicina: la música.</p>
+                    <p>Si deseas más detalles sobre mi o lo que hago te animo a que visites las diferentes secciones de mi website, que te des una vuelta por el blog o contacta conmigo. ¡Me gusta conocer gente y compartir opinión e ideas!</p>
+                    <div class="txt-center social margin-top-1em">
+                        <a href="https://github.com/AmenoPh1x" title="Mira mis proyectos en GitHub" class="circle bg-github" target="_blank" rel="nofollow"><i class="zmdi zmdi-github-alt"></i></a>
+                        <a href="https://twitter.com/christianamenos" title="Sígueme en Twitter" class="circle bg-twitter" target="_blank" rel="nofollow"><i class="zmdi zmdi-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/christian-amen%C3%B3s-ja%C3%A9n-0659a047" title="Añademe a tu círculo de contactos en LinkeId" class="circle bg-linkedin" target="_blank" rel="nofollow"><i class="zmdi zmdi-linkedin"></i></a>
+                        <a href="https://plus.google.com/+ChristianAmenosJa%C3%A9n" class="circle bg-google" title="Añádeme a tus círculos en Google" target="_blank" rel="nofollow"><i class="zmdi zmdi-google"></i></a>
+                        <a href="https://www.facebook.com/chajaen" class="circle bg-facebook" title="Seamos amigos en Facebook" target="_blank" rel="nofollow"><i class="zmdi zmdi-facebook"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h2 id="skills"><i class="zmdi zmdi-tune big"></i> Habilidades</h2>
+                </header>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-html5-plain colored"></i>
+                    </div>
+                    <h3>HTML5 <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i></span></h3>
+                    <p>Conocimientos y experiencia sólida en creación de páginas y aplicaciones web.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-css3-plain colored"></i>
+                    </div>
+                    <h3>CSS3 <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-half big"></i></span></h3>
+                    <p>Amplia experiencia en páginas y aplicaciones web. Conocimientos complementarios con uso de SASS, Compass, Bower y Gulp además de Twitter Bootstrap.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
+                    <h3>JavaScript <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-half big"></i></span></h3>
+                    <p>Experiencia y conocimientos avanzados en JavaScript, aplicados en páginas, aplicaciones y videojuegos web. Conocimientos de jQuery y librerías HTML5 como LocalStorage, Canvas, entre otras.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-angularjs-plain colored"></i>
+                    </div>
+                    <h3>AngularJS <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-outline big"></i></span></h3>
+                    <p>Conocimientos y experiencia en aplicaciones web de pequeña embergadura.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-php-plain colored"></i>
+                    </div>
+                    <h3>PHP <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-half big"></i></span></h3>
+                    <p>Amplia experiencia en desarrollo web y APIs. Conocimientos en Frameworks MVC como Codeigniter y Zend Framework entre otros.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-nodejs-plain colored"></i>
+                    </div>
+                    <h3>NodeJS <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-half big"></i></span></h3>
+                    <p>Conocimientos avanzados aplicados a creación de APIs mediante ExpressJS, WebSockets y conectividad de dispositivos / sensores en el internet de las cosas (IoT).</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-mysql-plain colored"></i>
+                    </div>
+                    <h3>MySQL <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-outline big"></i></span></h3>
+                    <p>Gestión de modelos de datos relacionales complejos.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-mongodb-plain colored"></i>
+                    </div>
+                    <h3>MongoDB <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-outline big"></i></span></h3>
+                    <p>Gestión de estructuras de datos de complejidad media enfocada a ingesta de datos de gran volumen para IoT.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-java-plain colored"></i>
+                    </div>
+                    <h3>Java <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-outline big"></i></span></h3>
+                    <p>Uso del lenguaje para aplicaciones web, de escritorio y móvil de diversa índole.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-android-plain colored"></i>
+                    </div>
+                    <h3>Android <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-half big"></i><i class="zmdi zmdi-star-outline big"></i></span></h3>
+                    <p>Creación de aplicaciones de pequeña embergadura nativas o mediante el uso de webviews.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-git-plain colored"></i>
+                    </div>
+                    <h3>Git <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-outline big"></i></span></h3>
+                    <p>Gestión avanzada de repositiorios, brancas y commits.</p>
+                </div>
+                <div class="skill revealOnScroll" data-animation="fadeIn">
+                    <div class="div-center huge">
+                        <i class="devicon-trello-plain colored"></i>
+                    </div>
+                    <h3>Scrum / Kanban <span class="small"><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star big"></i><i class="zmdi zmdi-star-outline big"></i></span></h3>
+                    <p>Aplicación de metodologías ágiles en el día a día de proyectos de mediana y gran duración.</p>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h2 id="experience"><i class="zmdi zmdi-case big"></i> Experiencia</h2>
+                </header>
+                <ul class="timeline">
+                    <li>
+                        <h4>Full-Stack Web Developer - Admira Digital Networks</h4>
+                        <div class="period small"><i class="zmdi zmdi-calendar"></i> <span>Octubre 2013</span> - <span class="txt-info">Actualmente</span></div>
+                        <p>Analista programador de soluciones y aplicaciones móviles y web enfocado al Digital Signage e IoT, tanto a nivel de Front-End como Back-End.</p>
+                        <div class="techs"><span class="badge bg-html">HTML5</span><span class="badge bg-css">CSS3</span><span class="badge bg-js">JavaScript</span><span class="badge bg-php">PHP</span><span class="badge bg-mysql">MySQL</span><span class="badge bg-nodejs">NodeJS</span><span class="badge bg-mongodb">MongoDB</span><span class="badge bg-js">jQuery</span><span class="badge bg-php">Codeigniter</span><span class="badge bg-angularjs">AngularJS</span><span class="badge bg-nodejs">ExpressJS</span><span class="badge bg-css">SASS</span><span class="badge bg-git">Git</span></div>
+                    </li>
+                    <li>
+                        <h4>Web developer / Former - Appbridge</h4>
+                        <div class="period"><i class="zmdi zmdi-calendar"></i> <span>Enero 2013</span> - <span>Octubre 2013</span></div>
+                        <p>Analista programador de páginas y aplicaciones web a medida Front-end y Back-end. Formación empresarial y de junior developers.</p>
+                        <div class="techs"><span class="badge bg-html">HTML</span><span class="badge bg-css">CSS</span><span class="badge bg-js">JavaScript</span><span class="badge bg-php">PHP</span><span class="badge bg-mysql">MySQL</span><span class="badge bg-js">jQuery</span><span class="badge bg-css">Bootstrap</span></div>
+                    </li>
+                    <li>
+                        <h4>Web designer / Web developer / Founder - Guinusoft</h4>
+                        <div class="period"><i class="zmdi zmdi-calendar"></i> <span>Mayo 2012</span> - <span>Enero 2013</span></div>
+                        <p>Diseñador, gestor de proyectos y analista programador de páginas y aplicaciones web front-end.</p>
+                        <div class="techs"><span class="badge bg-html">HTML5</span><span class="badge bg-css">CSS3</span><span class="badge bg-js">JavaScript</span><span class="badge bg-php">PHP</span><span class="badge bg-mysql">MySQL</span><span class="badge bg-js">jQuery</span><span class="badge bg-php">ZendFramework</span><span class="badge bg-css">Bootstrap</span></div>
+                    </li>
+                </ul>
+                <div class="txt-center">
+                    <!--a class="more-timeline revealOnScroll" data-animation="fadeIn" href=""><i class="zmdi zmdi-plus"></i> Ver más</a-->
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h2 id="education"><i class="zmdi zmdi-graduation-cap big"></i> Formación</h2>
+                </header>
+                <ul class="timeline">
+                    <li>
+                        <h4>Cursos Actívate - Google</h4>
+                        <div class="period small"><i class="zmdi zmdi-calendar"></i> <span>Enero 2016</span> - <span class="txt-info">Actualmente</span></div>
+                        <p>Cursos online de Marketing, analítica y desarrollo en móvil y web.</p>
+                    </li>
+                    <li>
+                        <h4>MongoDB for Node.js Developers - MongoDB University</h4>
+                        <div class="period small"><i class="zmdi zmdi-calendar"></i> <span>Mayo 2013</span> - <span>Julio 2014</span></div>
+                        <p>Curso online práctico de gestión de MongoDB mediante el desarrollo con NodeJS.</p>
+                    </li>
+                    <li>
+                        <h4>Ingeniería Superior Informática - Universidad Politècnica de Catalunya</h4>
+                        <div class="period small"><i class="zmdi zmdi-calendar"></i> <span>Septiembre 2006</span> - <span>Mayo 2014</span></div>
+                        <p>Ingeniería superior informática en la Facultad de Informàtica de Barcelona (FIB) de la Universidad Politècnica de Catalunya (UPC).</p>
+                    </li>
+                </ul>
+                <div class="txt-center">
+                    <!--a class="more-timeline revealOnScroll" data-animation="fadeIn" href=""><i class="zmdi zmdi-plus"></i> Ver más</a-->
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h2 id="curiosities"><i class="zmdi zmdi-mood big"></i> Curiosidades</h2>
+                </header>
+                <dl class="curiosities line">
+                    <dt>Libro favorito:</dt>
+                    <dd>El nombre del viento - Patrick Rothfuss</dd>
+                    <dt>Videojuego favorito:</dt>
+                    <dd>Final Fatansy IX - Squaresoft</dd>
+                    <dt>Manga favorito:</dt>
+                    <dd>Pluto - Naoki Urasawa</dd>
+                    <dt>Paises visitados:</dt>
+                    <dd>3</dd>
+                    <dt>Max. saltos a la comba:</dt>
+                    <dd>253</dd>
+                    <dt>Kilómetros conducidos:</dt>
+                    <dd>100k+</dd>
+                    <dt>Comida de la semana:</dt>
+                    <dd>Crema de calabaza</dd>
+                    <dt class="last">Canción de la semana:</dt>
+                    <dd class="last"><a href="https://www.youtube.com/watch?v=I8QFHrPSYTA" target="_blank" title="Introduction and Rondo Capriccioso en YouTube">Introduction and Rondo Capriccioso</a></dd>
+                </dl>
+            </article>
+        </div>
+
+        <footer>
+            <div class="txt-center">
+                <img src="img/christian-amenos-logo.png" class="logo">
+                <div>
+                    Christian Amenós Jaén
+                </div>
+            </div>
+            <div class="txt-right">
+                <nav>
+                    <ul>
+                        <li><a href="">Sobre mi</a></li>
+                        <!--li><a href="">Trayectoria profesional</a></li>
+                        <li><a href="">Proyectos</a></li>
+                        <li><a href="">Laboratorio</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contacto</a></li-->
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://github.com/AmenoPh1x" title="Mira mis proyectos en GitHub" class="circle bg-github" target="_blank" rel="nofollow"><i class="zmdi zmdi-github-alt"></i></a>
+                    <a href="https://twitter.com/christianamenos" title="Sígueme en Twitter" class="circle bg-twitter" target="_blank" rel="nofollow"><i class="zmdi zmdi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/christian-amen%C3%B3s-ja%C3%A9n-0659a047" title="Añademe a tu círculo de contactos en LinkeId" class="circle bg-linkedin" target="_blank" rel="nofollow"><i class="zmdi zmdi-linkedin"></i></a>
+                    <a href="https://plus.google.com/+ChristianAmenosJa%C3%A9n" class="circle bg-google" title="Añádeme a tus círculos en Google" target="_blank" rel="nofollow"><i class="zmdi zmdi-google"></i></a>
+                    <a href="https://www.facebook.com/chajaen" class="circle bg-facebook" title="Seamos amigos en Facebook" target="_blank" rel="nofollow"><i class="zmdi zmdi-facebook"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!--script src="lib/angular.min.js"></script>
+        <script src="app.js"></script>
+        <script src="components/home/homeController.js"></script-->
+        <script type="text/javascript">
+
+            $('body').on('click', '#menu-opener', function () {
+                if ($('#main-nav').hasClass('openMenu')) {
+                    $('#main-nav').removeClass('openMenu');
+                    $('#main-nav').addClass('closeMenu');
+                    $('.opacity-layer').removeClass('fadeInShort');
+                    $('.opacity-layer').addClass('fadeOutShort');
+                    setTimeout(function () {
+                        $('.opacity-layer').addClass('hidden');
+                    }, 500);
+                } else {
+                    $('#main-nav').removeClass('closeMenu');
+                    $('#main-nav').addClass('openMenu');
+                    $('.opacity-layer').removeClass('hidden');
+                    $('.opacity-layer').addClass('fadeInShort');
+                    $('.opacity-layer').removeClass('fadeOutShort');
+                }
+            });
+
+            $('body').on('click', '#main-nav nav ul ul li', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(e.target).attr('href')).offset().top - 80
+                }, 500);
+                $('#main-nav').removeClass('openMenu');
+                $('#main-nav').addClass('closeMenu');
+                $('.opacity-layer').removeClass('fadeInShort');
+                $('.opacity-layer').addClass('fadeOutShort');
+                setTimeout(function () {
+                    $('.opacity-layer').addClass('hidden');
+                }, 500);
+            });
+
+            $(window).on('scroll', revealOnScroll);
+            function revealOnScroll() {
+                var scrolled = $(window).scrollTop();
+                $(".revealOnScroll:not(.animated)").each(function () {
+                    var offsetTop = $(this).offset().top;
+                    if ((scrolled + $(window).height()) * 0.98 > offsetTop) {
+                        if ($(this).attr('data-timeout')) {
+                            window.setTimeout(function () {
+                                $(this).addClass('animated ' + $(this).attr('data-animation'));
+                            }, parseInt($(this).attr('timeout'), 10));
+                        } else {
+                            $(this).addClass('animated ' + $(this).attr('data-animation'));
+                        }
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
